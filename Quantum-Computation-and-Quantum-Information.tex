@@ -1,0 +1,41 @@
+\documentclass[lang=cn,12pt]{elegantbook}
+
+\title{量子计算与量子信息}
+
+\author{仇书琳}
+\institute{宁波大学物理科学与技术学院}
+\date{April 9, 2022}
+\version{0.1}
+\bioinfo{自定义}{信息}
+
+\extrainfo{不要以为抹消过去，重新来过，即可发生什么改变。—— 比企谷八幡}
+
+\setcounter{tocdepth}{3}
+
+\logo{logo-blue.png}
+\cover{cover.jpg}
+
+% 本文档命令
+\usepackage{array}
+\newcommand{\ccr}[1]{\makecell{{\color{#1}\rule{1cm}{1cm}}}}
+
+% 修改标题页的橙色带
+\definecolor{customcolor}{RGB}{32,178,170}
+\colorlet{coverlinecolor}{customcolor}
+
+\begin{document}
+
+\maketitle
+\frontmatter
+
+\tableofcontents
+
+\mainmatter
+% 第一章
+\input{chapters/1_chapter1.tex}
+\input{chapters/2_chapter2.tex}
+\input{chapters/3_chapter3.tex}
+\input{chapters/4_chapter4.tex}
+\input{chapters/5_chapter5.tex}
+\input{misc/5_appendix.tex}
+\end{document}
